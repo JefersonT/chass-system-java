@@ -1,16 +1,14 @@
 package br.com.chesssystemjava;
 
-import br.com.chesssystemjava.boardgame.Position;
-import org.springframework.boot.SpringApplication;
+import br.com.chesssystemjava.boardgame.Board;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class ChessSystemJavaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ChessSystemJavaApplication.class, args);
-		Position position = new Position(3,5);
-		System.out.println(position);
+//		SpringApplication.run(ChessSystemJavaApplication.class, args);
+		Board board = new Board(8,8);
 	}
 
 }

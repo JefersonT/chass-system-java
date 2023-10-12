@@ -6,8 +6,8 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class Position {
-    private Integer row;
-    private Integer column;
+    private int row;
+    private int column;
 
     @Override
     public String toString() {
