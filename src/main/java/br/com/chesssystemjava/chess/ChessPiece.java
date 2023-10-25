@@ -5,7 +5,7 @@ import br.com.chesssystemjava.boardgame.Piece;
 import lombok.Getter;
 import lombok.Setter;
 
-public class ChessPiece extends Piece {
+public abstract class ChessPiece extends Piece {
 
     @Getter @Setter
     private Color color;
