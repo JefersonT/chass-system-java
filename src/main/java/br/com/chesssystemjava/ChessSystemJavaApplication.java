@@ -22,7 +22,7 @@ public class ChessSystemJavaApplication {
 
 		List<ChessPiece> captured = new ArrayList<>();
 
-		while (true) {
+		while (!chessMatch.isCheckMate()) {
 			try {
 				UI.clearScreen();
 				UI.printMatch(chessMatch, captured);
@@ -49,8 +49,9 @@ public class ChessSystemJavaApplication {
 				System.out.println(e.getMessage());
 				sc.nextLine();
 			}
-
 		}
+		UI.clearScreen();
+		UI.printMatch(chessMatch, captured);
 	}
 
 
